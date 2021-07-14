@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="preferences_event_view_title">Event view setting</string>
+    <string name="preferences_hide_declined_title">Hide declined events</string>
+    <string name="preferences_show_week_num_title">Show week number</string>
+    <string name="preferences_week_start_day_default">-1</string>
+    <string name="preferences_week_start_day_title">Week starts on</string>
+    <string name="preferences_week_start_day_dialog">Week starts on</string>
+    <string name="preferences_use_home_tz_title">Use home time zone</string>
+    <string name="preferences_use_home_tz_descrip">Displays calendars and event times in your home time zone when traveling</string>
+    <string name="preferences_home_tz_default">America/Los_Angeles</string>
+    <string name="preferences_home_tz_title">Home time zone</string>
+    <string name="preferences_reminder_title">Notifications \u0026 reminders</string>
+    <string name="preferences_alerts_title">Notifications</string>
+    <string name="preferences_alerts_vibrateWhen_title">Vibrate</string>
+    <string name="preferences_alerts_popup_title">Pop-up notification</string>
+    <string name="preferences_default_reminder_default">10</string>
+    <string name="preferences_default_reminder_title">Default reminder time</string>
+    <string name="preferences_default_reminder_dialog">Default reminder time</string>
+    <string name="preferences_message_title">Message setting</string>
+    <string name="preferences_message_enable_notifications_title">Enable message notifications</string>
+    <string name="preferences_message_send_feedback_title">Send feedback</string>
+    <string name="preferences_message_send_feedback_summary">Send feedback</string>
+
+    <string name="prefDefault_alerts_vibrate_true" translatable="false">always</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

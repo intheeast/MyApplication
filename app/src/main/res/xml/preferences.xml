@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/preferences_event_view_title">
+        <CheckBoxPreference
+            app:key="preferences_hide_declined"
+            app:defaultValue="false"
+            app:title="@string/preferences_hide_declined_title" />
+        <CheckBoxPreference
+            app:key="preferences_show_week_num"
+            app:defaultValue="false"
+            app:title="@string/preferences_show_week_num_title" />
+        <ListPreference
+            app:key="preferences_week_start_day"
+            app:defaultValue="@string/preferences_week_start_day_default"
+            app:title="@string/preferences_week_start_day_title"
+            app:entries="@array/preferences_week_start_day_labels"
+            app:entryValues="@array/preferences_week_start_day_values"
+            app:dialogTitle="@string/preferences_week_start_day_dialog" />
+        <CheckBoxPreference
+            app:key="preferences_home_tz_enabled"
+            app:defaultValue="false"
+            app:title="@string/preferences_use_home_tz_title"
+            app:summary="@string/preferences_use_home_tz_descrip" />
+        <Preference
+            app:key="preferences_home_tz"
+            app:dependency="preferences_home_tz_enabled"
+            app:defaultValue="@string/preferences_home_tz_default"
+            app:title="@string/preferences_home_tz_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="preferences_alerts_category"
+        app:title="@string/preferences_reminder_title">
+        <CheckBoxPreference
+            app:key="preferences_alerts"
+            app:defaultValue="true"
+            app:title="@string/preferences_alerts_title" />
+        <CheckBoxPreference
+            app:layout="?android:attr/preferenceLayoutChild"
+            app:key="preferences_alerts_vibrate"
+            app:title="@string/preferences_alerts_vibrateWhen_title"
+            app:defaultValue="false" />
+        <CheckBoxPreference
+            app:layout="?android:attr/preferenceLayoutChild"
+            app:key="preferences_alerts_popup"
+            app:defaultValue="false"
+            app:title="@string/preferences_alerts_popup_title" />
+        <ListPreference
+            app:key="preferences_default_reminder"
+            app:defaultValue="@string/preferences_default_reminder_default"
+            app:title="@string/preferences_default_reminder_title"
+            app:entries="@array/preferences_default_reminder_labels"
+            app:entryValues="@array/preferences_default_reminder_values"
+            app:dialogTitle="@string/preferences_default_reminder_dialog" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:key="preferences_message_category"
+        app:title="@string/preferences_message_title">
+        <SwitchPreferenceCompat
+            app:key="preferences_message_notifications"
+            app:title="@string/preferences_message_enable_notifications_title"/>
+
+        <Preference
+            app:key="preferences_message_feedback"
+            app:title="@string/preferences_message_send_feedback_title"
+            app:summary="@string/preferences_message_send_feedback_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
